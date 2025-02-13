@@ -193,7 +193,7 @@ input, textarea {
 }
 
 button {
-    background: #d4af37;
+    background: #c9a911;
     color: white;
     padding: 10px;
     border: none;
@@ -239,7 +239,7 @@ details[open] {
 }
 
 .about-border {
-    border: 2px solid #d4af37; 
+    border: 2px solid #c9a911; 
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px; 
