@@ -251,6 +251,22 @@ details[open] {
     line-height: 1.6;
 }
 
+.about-border:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.about-border:nth-of-type(2) .about-image {
+    width: 40%; 
+    max-width: 300px;
+    height: auto;
+}
+
+.about-border:nth-of-type(2) p {
+    flex: 1; 
+}
+
 div.gallery {
     margin: 5px;
     float: left;
