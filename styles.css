@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f5f0;
-    color: #d4af37;
+    color: #c9a911;
 }
 
 footer {
-    background: #d4af37;
+    background: #c9a911;
     color: white;
     text-align: center;
     padding: 20px;
@@ -24,7 +24,7 @@ footer {
 /* Header */
 header {
     background: white;
-    color: #d4af37;
+    color: #c9a911;
     padding: 20px 0;
     text-align: center;
     position: sticky;
@@ -51,9 +51,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #d4af37;
+    color: #c9a911;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -64,8 +64,8 @@ section {
 }
 
 h1 {
-    font-size: 40px;
-    color: #d4af37;
+    font-size: 45px;
+    color: #c9a911;
 }
 
 /* Products Grid */
@@ -80,7 +80,7 @@ h1 {
 
 .product {
     background: white;
-    border: 1px solid #d4af37;
+    border: 1px solid #c9a911;
     padding: 20px;
     margin: 10px;
     border-radius: 17px;
@@ -108,7 +108,7 @@ h1 {
 .product img {
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #d4af37;
+    border-bottom: 2px solid #c9a911;
 }
 .title-container {
     display: grid;
@@ -117,7 +117,7 @@ h1 {
     font-size: 60;
 }
 h2 {
-    font-size: 18px;
+    font-size: 30px;
     margin: 17px;
 } 
 
@@ -151,11 +151,11 @@ h1 {
 
 
 .product h2 {
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .gold-text {
-    color: #d4af37;
+    color: #c9a911;
     font-weight: bold;
 }
 
@@ -173,7 +173,7 @@ table, th, td {
 }
 
 th {
-    background: #d4af37;
+    background: #c9a911;
     color: white;
 }
 
@@ -198,7 +198,7 @@ button {
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 button:hover {
@@ -221,7 +221,7 @@ button:hover {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     display: inline-block;
     text-align: center;
     border-radius: 5px;
@@ -283,11 +283,11 @@ div.gallery {
 }
 
 .get-started-btn {
-    background-color: #d4af37;
+    background-color: #c9a911;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 5px;
     font-weight: bold;
     display: inline-block;
