@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Website</title>
+    <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="insert()">
     <header>
         <img src="logo.avif" alt="Gold Logo" class="logo">
         <nav>
@@ -54,10 +55,15 @@
             <a href="products.html" class="get-started-btn">Get Started</a>
         </div>
     </section>    
-
+    <div id="advertizement">
+        <div class="titlerand">Product Showcase</div>
+        <img src="showcase1.png" id="randomimg" class="logo">
+        <div id="descrand">Pure Ingredients, Pure Bliss</div>
+    </div>
     <footer>
         <p>Contact us: <a href="tel:05444142577">05444142577</a> | WhatsApp: <a href="https://wa.me/05444142577">05444142577</a></p>
         <p>Email: <a href="mailto:shop@osmanliusa.com">shop@osmanliusa.com</a></p>
     </footer>
 </body>
 </html>
+
