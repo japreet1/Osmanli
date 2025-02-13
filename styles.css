@@ -300,13 +300,3 @@ div.gallery {
 .get-started-btn:hover {
     background-color: #b8962e;
 }
-
-#advertizement{
-    position: absolute;
-    left: 5%; 
-    top: 50%;
-    padding: 20px;
-    max-width: 1200px;
-    max-height: 1200px;
-    margin: 30px auto; 
-}
