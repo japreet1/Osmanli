@@ -292,6 +292,9 @@ div.gallery {
     text-align: center;
     min-height: 50px;
   }
+.red-text {
+    color: red;
+}
 
 .button-container {
     text-align: center;
