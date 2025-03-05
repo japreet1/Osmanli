@@ -330,6 +330,9 @@ div.gallery {
     max-width: 1200px;
     max-height: 1200px;
     margin: 30px auto; 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
 }
 .hair-type {
     font-size: 0.9em;
