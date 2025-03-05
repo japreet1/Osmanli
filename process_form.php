@@ -1,23 +1,25 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = isset($_POST['name']) ? $_POST['name'] : '';
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
-    $message = isset($_POST['message']) ? $_POST['message'] : '';
+    $name = htmlspecialchars($_POST["name"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $message = htmlspecialchars($_POST["message"]);
 
-    if (empty($name) || empty($email) || empty($message)) {
-        echo "All fields are required!";
-        exit;
-    }
+    $to = "shop@osmanliusa.com";  // Your recipient email
+    $subject = "New Contact Form Submission from $name";
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "Content-Type: text/plain; charset=UTF-8";
 
-    $to = "your-email@example.com"; 
-    $subject = "New Contact Us Message from $name";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
-    $headers = "From: $email";
+    $body = "Name: $name\n";
+    $body .= "Email: $email\n\n";
+    $body .= "Message:\n$message\n";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
+        echo "Your message has been sent successfully.";
     } else {
-        echo "Error sending message.";
+        echo "Sorry, there was an error sending your message.";
     }
+} else {
+    echo "Invalid request.";
 }
 ?>
