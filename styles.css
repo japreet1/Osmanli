@@ -166,6 +166,7 @@ table {
     margin: auto;
     border-collapse: collapse;
     background: white;
+    font-size: 18px;
 }
 
 table, th, td {
