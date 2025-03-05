@@ -166,18 +166,21 @@ table {
     margin: auto;
     border-collapse: collapse;
     background: white;
-    font-size: 18px;
 }
 
 table, th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    font-size: 20px;
 }
 
 th {
     background: #d4af37;
     color: white;
+}
+td {
+    color: black;
 }
 
 /* Contact Form */
