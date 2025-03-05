@@ -21,7 +21,7 @@
     
     <section id="contact">
         <h1>Contact Us</h1>
-        <form action="#" method="post">
+        <form id="contact-form" action="process_form.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             
@@ -33,6 +33,7 @@
             
             <button type="submit">Send</button>
         </form>
+        <div id="response-message"></div>
     </section>
 
     <footer>
@@ -45,5 +46,25 @@
             <a href="https://www.linkedin.com/in/tartil-almokesess/" target="_blank">Tartil Almokesess</a>,       
         </p>
     </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+            
+            var formData = new FormData(this);
+            
+            fetch("process_form.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById("response-message").innerHTML = "<p>Message sent successfully!</p>";
+            })
+            .catch(error => {
+                document.getElementById("response-message").innerHTML = "<p>Error sending message.</p>";
+            });
+        });
+    </script>
 </body>
 </html>
